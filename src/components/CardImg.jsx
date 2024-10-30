@@ -28,6 +28,7 @@ const Container = styled.div`
     width: 100%;
     gap: 80px;
     color: rgb(64, 25, 109);
+    margin-bottom: 100px;
 
     @media (max-width:900px){
         width: 100%;

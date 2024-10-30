@@ -1,3 +1,4 @@
+import "../components/Testimonial.css"
 import Card from "../components/Card"
 import HeroSection from "../components/HeroSection"
 import order from "../assets/png/order.jpg"
@@ -9,6 +10,12 @@ import styled from "styled-components";
 import CardImg from "../components/CardImg"
 import lady from "../assets/png/lady.jpg"
 import ladyMoney from "../assets/png/ladyMoney.jpg"
+import kudaCard from "../assets/png/kudaCard.jpg"
+import micGuy from "../assets/png/micGuy.jpg"
+import moneyJar from "../assets/png/moneyJar.jpg"
+import Testiomnial from "../components/Testiomnial"
+import babaJide from "../assets/svg/babajide.svg"
+import muhammud from "../assets/svg/muhammad.svg"
 
 
 const Home = () => {
@@ -58,6 +65,50 @@ const Home = () => {
              
 
         </CardIMageContainer>
+
+
+        <CardIMageContainer>
+          <Wrapper>
+          <CardImg header={"Turn off access, turn on safety."} desc={"Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your missing card on the app so no one can use it. We’d like to see them try."} anchor={"Larn more about our cards"} img={kudaCard} />
+
+
+          </Wrapper>
+             
+
+        </CardIMageContainer>
+
+
+        <CardIMageContainer>
+          <Wrapper>
+          <CardImg header={"We’re always happy to help you."} desc={"You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy."} anchor={"Get Help"} img={micGuy} />
+
+
+          </Wrapper>
+             
+
+        </CardIMageContainer>
+
+
+        <CardIMageContainer>
+          <Wrapper>
+          <CardImg header={"Fees as clear as glass."} desc={"We’re serious about free banking, and we will never, ever charge you for anything without your consent."} anchor={"See all our fees"} img={moneyJar} />
+
+
+          </Wrapper>
+             
+
+        </CardIMageContainer>
+
+
+        <div className="testimonial-container">
+              <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
+              <Testiomnial text={"Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them on Sunday... 48 working hours after and my money is back in my account... Special shout out to Maxwell and Norah"} img={muhammud} username={"Muhammud Kudu"} />
+              <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
+              <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
+
+
+
+        </div>
     </>
   )
 }
