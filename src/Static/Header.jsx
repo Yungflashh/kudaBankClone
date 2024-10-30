@@ -35,13 +35,17 @@ const Header = () => {
                 </NavLinks>
 
                 </LogoLinksNav>
+                
 
+                <ActionDiv>
                 <ActionBtn>
                         <nav>SIgn In</nav>
                         <button>Join Kuda</button>
 
                 </ActionBtn>
                 <nav>Country</nav>
+                </ActionDiv>
+                
 
 
         </NavHeader>
@@ -115,6 +119,11 @@ const ActionBtn = styled.div`
         border: none;
         outline: none;
     }
+`
+
+const ActionDiv = styled.div`
+    display: flex;
+    align-items: center;
 `
 
 const LogoLinksNav = styled.div`

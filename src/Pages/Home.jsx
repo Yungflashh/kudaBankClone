@@ -16,6 +16,8 @@ import moneyJar from "../assets/png/moneyJar.jpg"
 import Testiomnial from "../components/Testiomnial"
 import babaJide from "../assets/svg/babajide.svg"
 import muhammud from "../assets/svg/muhammad.svg"
+import realsok from "../assets/svg/realsok.svg"
+import sbiHoldings from "../assets/svg/sbiHoldings.svg"
 
 
 const Home = () => {
@@ -103,7 +105,8 @@ const Home = () => {
         <div className="testimonial-container">
               <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
               <Testiomnial text={"Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them on Sunday... 48 working hours after and my money is back in my account... Special shout out to Maxwell and Norah"} img={muhammud} username={"Muhammud Kudu"} />
-              <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
+              <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={sbiHoldings} username={"sbiHoldings"} />
+              <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={realsok} username={"realsok"} />
               <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
 
 
@@ -140,7 +143,7 @@ const CardContainer = styled.div`
 
     @media (max-width:900px){
     flex-direction: column;
-    margin: 0px;
+    margin-top: -400px;
     justify-content: center;
     align-items: center;
     
@@ -164,6 +167,7 @@ const CardContainer = styled.div`
 
 const CardIMageContainer = styled.div`
   width: 100%;
+  height: 100vh;
   /* border: 5px solid yellow; */
   
   @media (max-width:900px){

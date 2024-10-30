@@ -25,7 +25,7 @@ const HeroSection = () => {
 
 
         <HeroImg>
-                <img className="spin spin2" src={spin} alt="" />
+                <img className="spin2" src={spin} alt="" />
                 <img className="spin" src={phoneKuda} alt="" />
                 
 
@@ -48,7 +48,7 @@ width: 100%;
     @media (max-width:900px){
         /* border: 3px solid red; */
         flex-direction: column;
-        height: 700px;
+        height: auto;
         align-items: center;
     }
 
@@ -64,7 +64,7 @@ width: 300px;
 @media (max-width:900px){
         width: 100%;
         align-items: center;
-        margin: 0px 0px;
+        margin: 0px 0px 100px 0px;
         width: 100%;
         /* border: 3px solid green; */
 }
@@ -93,26 +93,21 @@ p{
 `
 
 const HeroImg = styled.div`
+position: relative; /* Set the parent container to relative */
+    width: 100%; /* Ensure it takes full width */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flex to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 
 
 
-
-img{
-    width: 300px;
-}
-
-@media (max-width:900px){
-
-    margin: auto;
-    img{
-        width: 100%;
-       
-        
-    }
-}
 
 .spin2{
-   
+    position: absolute;
+    width: 400px;
+    right: 100px;
+    top: 50px;
     animation: rotate 5s linear infinite; /* Animation properties */
     @keyframes rotate {
     from {
@@ -121,26 +116,40 @@ img{
     to {
         transform: rotate(360deg);
     }
+
+    
 }
+
+@media (max-width:900px){
+      width: 300px;
+      position: absolute;
+      top: 40px;
+      /* border: 2px solid red; */
+      left: 50px;
+     
+    }
 }
 
 .spin{
     position: absolute;
     top: 50px;
-    right: 200px;
+    right: 90px;
     width: 400px;
     /* border: 2px solid green; */
+
+   
 
     
 }
 
 @media (max-width:900px){
        .spin{
-        top: 500px;
-        /* border: 2px solid blue; */
-        bottom: 0px;
-        right: 0px;
-        margin: auto;
+       
+        position: absolute; /* Position absolutely within the container */
+    width: 400px; /* Set width */
+    left: 50%; /* Move to the center horizontally */
+    top: 20%; /* Move to the center vertically */
+    transform: translate(-50%, -50%); /* Adjust to center */
 
 
        }
@@ -159,9 +168,7 @@ const ButtonDiv = styled.div`
         border-radius: 10px;
         border: none;
 
-        @media (max-width:900px){
-                
-        }
+    
 
 
     }
