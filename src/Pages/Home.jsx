@@ -18,6 +18,7 @@ import babaJide from "../assets/svg/babajide.svg"
 import muhammud from "../assets/svg/muhammad.svg"
 import realsok from "../assets/svg/realsok.svg"
 import sbiHoldings from "../assets/svg/sbiHoldings.svg"
+import Partners from "../components/Partners"
 
 
 const Home = () => {
@@ -109,9 +110,9 @@ const Home = () => {
               <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={realsok} username={"realsok"} />
               <Testiomnial text={"Never thought an app would stylish become my everyday way to bank and have access to physical cash.@kudabank is sleek"} img={babaJide} username={"BabaJide"} />
 
-
-
         </div>
+
+        <Partners />
     </>
   )
 }
